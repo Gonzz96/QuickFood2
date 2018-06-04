@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Cerrar menú</a>
+  
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Comida española</a>
+  <a href="china.html" onclick="w3_close()" class="w3-bar-item w3-button">Comida china</a>
+  <a href="turca.html" onclick="w3_close()" class="w3-bar-item w3-button">Comida turca</a>
+  <br>
+  <a href="glutenfree.html" onclick="w3_close()" class="w3-bar-item w3-button">Gluten Free</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Conoce QuickFood</a>
+  <a href="#contacto" onclick="w3_close()" class="w3-bar-item w3-button">Contacto</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16">QuickFood, apunta y come</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/china/chop.jpg" alt="Sandwich" style="width:100%">
+      <h3>Chop suey</h3>
+      <p>Uno de los platos más tradicionales de la gastronomía china es el Chop Suey. A pesar de no ser una receta milenaria -su origen se relaciona a un chino que vivía en Estados Unidos en el siglo XIX-, este plato no falta en ninguna buena mesa china. Su nombre significa literalmente "trozos mezclados" y consiste en cocinar diferentes tipos de carne con verduras (tipo apio y pimiento) en un wok. </p>
+    </div>
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/china/huo.jpg"" alt="Steak" style="width:100%">
+      <h3>Huo guo</h3>
+      <p>Conocido como fondue china o caldero mongol, el Hot Pot es todo un festín de sabores y texturas que se prepara principalmente en invierno. Consiste en cocinar diferentes tipos de alimentos en un caldo caliente con distintas salsas y colocarlo en el centro de la mesa. </p>
+    </div>
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/china/jia.jpg"" alt="Cherries" style="width:100%">
+      <h3>Jiaozi</h3>
+      <p>Otro plato que no puede faltar en una mesa china durante las celebraciones del Año Nuevo Chino son los Jiaozi, una especie de empanadillas de masa fina rellenas de carne picada o verduras que se sellan con los dedos. Se pueden cocinar de varias maneras: fritos o hervidos. Y para acompañar: salsa de soja y vinagre o salsa picante. </p>
+    </div>
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/china/pato.jpg"" alt="Pasta and Wine" style="width:100%">
+      <h3>Pato chino</h3>
+      <p>Nacido en Pekín, el plato de pato laqueado es uno de los más populares dentro y fuera de China. La forma de prepararlo es muy curiosa: se coge un pollo y se vacía totalmente de vísceras. Se le tapan todas las aberturas y se le infla como un globo para que la carne se separe de la piel. </p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/china/pollo.jpg"" alt="Popsicle" style="width:100%">
+      <h3>Gong bao</h3>
+      <p> Un auténtico clásico de la cocina china es el pollo gong bao. Eso sí, prepárate para que se te salten las lágrimas, porque este plato procedente de la región de Sichuan es uno de los más picantes de la gastronomía china. La razón: la gran cantidad de pimienta y chiles que lleva. 
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/china/wanton.jpg" alt="Salmon" style="width:100%">
+      <h3>Wanton Mee</h3>
+      <p>El Wanton Mee son unos fideos cantoneses de huevo muy populares en China, sobre todo en Hong Kong. Estos noodles se sirven en una especie de sopa, con abundante salsa de ostras o de soja. Hay diferentes versiones según la región en la que se prepare, pero lo habitual es que vaya servido con Char Siew (rodajas de carne de cerdo asado) y varios tipos de verduras de hojas verdes, como el kailan chino. </p>
+    </div>
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/china/zongzi.jpg" alt="Sandwich" style="width:100%">
+      <h3>Zongi</h3>
+      <p>l arroz no podía faltar en la gastronomía china. Eso sí, olvídate de la versión tres delicias, hay muchas otras recetas que incluyen el arroz de una manera más sabrosa y auténtica. Un ejemplo es el Zongzi, un popular triángulo de arroz glutinoso relleno de carne o judías dulces y enrollado con hojas de bambú. Se cocina al vapor o hervido. </p>
+    </div>
+    
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Conoce QuickFood</h3>
+    <div class="w3-padding-32">
+      <h4><b>Cocina instantáneamente!</b></h4>
+      <h6><i>Por su desarrollador: Gonzalo Illán</i></h6>
+      <p>Esta aplicación rata de facilitar las labores tediosas de cocina reduciendo tiempos, ahorro en la compra de ingredientes, elección de recetas según tipo de dieta o tipo de cocina y copias de recetas de otros usuarios.</p>
+      <p>Selecciona un plato y este se imprimirá a través de la cámara de su dispositivo. Y cuidado... a veces queman!
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Contacto -->
+  <hr id="contacto">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Contacto</h3>
+    <div class="w3-padding-32">
+      <h6><i>Correo: 71025699c@usal.es</i></h6>
+      <h6><i>Teléfono :+34 666555444</i></h6>
+
+      <p>No dudes en llamarnos, estamos disponibles las 24 horas del día</p>
+      
+    </div>
+  </div>
+  <hr>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

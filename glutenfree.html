@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Cerrar menú</a>
+  
+  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">Comida española</a>
+  <a href="china.html" onclick="w3_close()" class="w3-bar-item w3-button">Comida china</a>
+  <a href="turca.html" onclick="w3_close()" class="w3-bar-item w3-button">Comida turca</a>
+  <br>
+  <a href="glutenfree.html" onclick="w3_close()" class="w3-bar-item w3-button">Gluten Free</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Conoce QuickFood</a>
+  <a href="#contacto" onclick="w3_close()" class="w3-bar-item w3-button">Contacto</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-center w3-padding-16">QuickFood, apunta y come</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    
+    <div class="w3-quarter">
+      
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/española/huevosrotos.jpg" alt="Steak" style="width:100%">
+      <h3>Huevos rotos</h3>
+      <p>Uno de mis platos españoles favoritos de toda la vida. Una bomba de calorías llena de felicidad y sabor.</p>
+    </div>
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/española/torreznos.jpg" alt="Cherries" style="width:100%">
+      <h3>Torreznos</h3>
+      <p>Los torreznos no son otra cosa sino tocino cortado en tiras gruesas frito en aceite hasta que queden dorados y crujientes. Son tan maravillosos que la UNESCO los considera patrimonio gastronómico de la humanidad.</p>
+    </div>
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/española/tortilla.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Tortilla de patata</h3>
+      <p>Clásico entre los clásicos en la gastronomía española. Las mejores tortillas de patatas son las que quedan ligeramente cremosas en el centro.</p>
+
+    </div>
+
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/china/wanton.jpg" alt="Salmon" style="width:100%">
+      <h3>Wanton Mee</h3>
+      <p>El Wanton Mee son unos fideos cantoneses de huevo muy populares en China, sobre todo en Hong Kong. Estos noodles se sirven en una especie de sopa, con abundante salsa de ostras o de soja. Hay diferentes versiones según la región en la que se prepare, pero lo habitual es que vaya servido con Char Siew (rodajas de carne de cerdo asado) y varios tipos de verduras de hojas verdes, como el kailan chino. </p>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/turca/dolma.jpg"" alt="Steak" style="width:100%">
+      <h3>Dolma</h3>
+      <p>Este plato es uno súper saludable elaborado con hoja de uva cocinadas en aceite de oliva y rellenas de arroz con especies. Este tipo no contiene carne, se sirve frío y se conoce también como sarma, que significa envuelto.</p>
+    </div>
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/española/gambas.jpg" alt="Sandwich" style="width:100%">
+      <h3>Gambas al ajillo</h3>
+      <p>Todos las hemos probado, todos las amamos. Su aroma nos vuelve locos. Uno de esos platos típicos españoles que no deberíamos pasar por alto.</p>
+    </div>
+    <div class="w3-quarter">
+      <!-- Botton servir-->
+      <button onclick="document.getElementById('modal-wrapper').style.display='block'"  style="margin-bottom:2px; "text-align:center";>
+      Servir
+      </button>
+      <div id="modal-wrapper" class="modal">
+        <form class="modal-content animate" >
+        
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+              <h4 style="text-align:center">¡Cuidado, que quema!</h4>
+            </div>
+        </form>
+      </div>
+      <!-- Fin Botton servir-->
+      <img src="imagenes/española/bravas.jpg" alt="Croissant" style="width:100%">
+      <h3>Patatas bravas</h3>
+      <p>Patatas cortadas en trozos medianas a las que se les pone encima una salsa brava a base de tomate, es ligera (o medianamente) picante.</p>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Conoce QuickFood</h3>
+    <div class="w3-padding-32">
+      <h4><b>Cocina instantáneamente!</b></h4>
+      <h6><i>Por su desarrollador: Gonzalo Illán</i></h6>
+      <p>Esta aplicación rata de facilitar las labores tediosas de cocina reduciendo tiempos, ahorro en la compra de ingredientes, elección de recetas según tipo de dieta o tipo de cocina y copias de recetas de otros usuarios.</p>
+      <p>Selecciona un plato y este se imprimirá a través de la cámara de su dispositivo. Y cuidado... a veces queman!
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Contacto -->
+  <hr id="contacto">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Contacto</h3>
+    <div class="w3-padding-32">
+      <h6><i>Correo: 71025699c@usal.es</i></h6>
+      <h6><i>Teléfono :+34 666555444</i></h6>
+
+      <p>No dudes en llamarnos, estamos disponibles las 24 horas del día</p>
+      
+    </div>
+  </div>
+  <hr>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
